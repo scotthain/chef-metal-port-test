@@ -1,3 +1,0 @@
-Dir.glob('/Users/shain/dev/metal-v/.chef/vms/*.vm') do |vm_file|
-  eval(IO.read(vm_file), nil, vm_file)
-end
