@@ -1,0 +1,7 @@
+Vagrant.configure('2') do |outer_config|
+  outer_config.vm.define "mario" do |config|
+    config.vm.hostname = "mario"
+    config.vm.box = precise64
+    config.vm.network "forwarded_port", guest: 443, host: 9443
+  end
+end
